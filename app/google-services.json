@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "68560179231",
+    "firebase_url": "https://goalkeeper-2a64b.firebaseio.com",
+    "project_id": "goalkeeper-2a64b",
+    "storage_bucket": "goalkeeper-2a64b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:68560179231:android:e5eb37eba3f52765",
+        "android_client_info": {
+          "package_name": "com.mxi.goalkeeper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "68560179231-gtab66ge0a319kchuo67jrk6jlst4fgj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mxi.goalkeeper",
+            "certificate_hash": "e94e3977345aad5c0de0429990b30618d04a9c7c"
+          }
+        },
+        {
+          "client_id": "68560179231-tjtarc18u16qsvf5n72o3qgtu7pu5ppq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKwtJBgjNLFuYxK_NHIyOPBCsy485_RsA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "68560179231-tjtarc18u16qsvf5n72o3qgtu7pu5ppq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

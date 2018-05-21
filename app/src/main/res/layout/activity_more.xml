@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical"
+    tools:context="com.mxi.goalkeeper.fragment.MyGames">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+
+        <com.mxi.goalkeeper.font.MyButton
+            android:id="@+id/btn_upcoming"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/mygames"
+            android:elevation="5dp"
+            android:orientation="vertical"
+            android:text="@string/my_profile"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorAccent" />
+
+
+        <com.mxi.goalkeeper.font.MyButton
+            android:id="@+id/btn_post_games"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/mygames"
+            android:elevation="5dp"
+            android:text="@string/invite_friends"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorAccent" />
+
+        <com.mxi.goalkeeper.font.MyButton
+            android:id="@+id/btn_my_reviews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/mygames"
+            android:elevation="5dp"
+            android:text="@string/settings"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorAccent" />
+
+
+        <com.mxi.goalkeeper.font.MyButton
+            android:id="@+id/btn_game_surveys"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/mygames"
+            android:elevation="5dp"
+            android:text="@string/help"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorAccent" />
+
+    </LinearLayout>
+</LinearLayout>

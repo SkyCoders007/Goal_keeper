@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <!-- <item
+        android:id="@+id/AB"
+        android:title="Alberta" />
+    <item
+        android:id="@+id/BC"
+        android:title="British Columbia" />
+    <item
+        android:id="@+id/LB"
+        android:title="Labrador" />
+    <item
+        android:id="@+id/MB"
+        android:title="Manitoba" />
+    <item
+        android:id="@+id/NB"
+        android:title="New Brunswick" />
+    <item
+        android:id="@+id/NF"
+        android:title="Newfoundland" />
+
+    <item
+        android:id="@+id/NS"
+        android:title="Nova Scotia" />
+    <item
+        android:id="@+id/NU"
+        android:title="Nunavut" />
+    <item
+        android:id="@+id/NW"
+        android:title="North West Terr" />
+    <item
+        android:id="@+id/ON"
+        android:title="Ontario" />
+    <item
+        android:id="@+id/PE"
+        android:title="Prince Edward Is" />
+
+    <item
+        android:id="@+id/QC"
+        android:title="Quebec" />
+
+    <item
+        android:id="@+id/SK"
+        android:title="Saskatchewen" />
+
+    <item
+        android:id="@+id/YU"
+        android:title="Yukon" />-->
+
+</menu>

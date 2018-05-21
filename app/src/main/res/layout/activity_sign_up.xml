@@ -1,0 +1,863 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical"
+    tools:context=".activity.SignUpNext">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@mipmap/logo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <com.github.siyamed.shapeimageview.RoundedImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_profile"
+                app:siBorderColor="@color/colorPrimary"
+                app:siBorderWidth="2dp"
+                app:siRadius="6dp"
+                app:siSquare="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <com.mxi.goalkeeper.font.MyEditText
+                android:id="@+id/et_first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="@string/first_name"
+                android:inputType="textPersonName|textCapWords"
+                android:paddingLeft="6dp"
+                android:textColor="@color/Color_black_text"
+                android:textColorHint="@color/Color_black_text" />
+
+            <com.mxi.goalkeeper.font.MyEditText
+                android:id="@+id/et_last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="@string/last_name"
+                android:inputType="textPersonName|textCapWords"
+                android:paddingLeft="6dp"
+                android:textColor="@color/Color_black_text"
+                android:textColorHint="@color/Color_black_text" />
+
+            <com.mxi.goalkeeper.font.MyEditText
+                android:visibility="gone"
+                android:id="@+id/et_civic_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="@string/civic_number"
+                android:inputType="number"
+                android:paddingLeft="6dp"
+                android:textColor="@color/Color_black_text"
+                android:textColorHint="@color/Color_black_text" />
+
+            <com.mxi.goalkeeper.font.MyEditText
+                android:id="@+id/et_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="@string/address"
+                android:inputType="number"
+                android:paddingLeft="6dp"
+                android:textColor="@color/Color_black_text"
+                android:textColorHint="@color/Color_black_text"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <!--
+                                <com.mxi.goalkeeper.font.MyEditText
+                                    android:id="@+id/et_city"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:ems="10"
+                                    android:hint="@string/city"
+                                    android:inputType="textCapWords"
+                                    android:paddingLeft="6dp"
+                                    android:textColor="@color/Color_black_text"
+                                    android:textColorHint="@color/Color_black_text" />
+                -->
+                <com.mxi.goalkeeper.font.MyTextView
+                    android:id="@+id/et_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:drawableRight="@android:drawable/arrow_down_float"
+                    android:drawableTint="@color/Color_black_text"
+                    android:gravity="bottom"
+                    android:paddingLeft="6dp"
+                    android:text="@string/country"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/Color_black_text" />
+
+
+                <com.mxi.goalkeeper.font.MyTextView
+                    android:id="@+id/et_province"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:drawableRight="@android:drawable/arrow_down_float"
+                    android:drawableTint="@color/Color_black_text"
+                    android:gravity="bottom"
+                    android:paddingLeft="6dp"
+                    android:text="@string/province"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/Color_black_text" />
+
+
+            </LinearLayout>
+
+
+<!--
+            <LinearLayout
+                android:id="@+id/ll_arena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                    <AutoCompleteTextView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/autocomplete_country"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:textColorHint="@color/Color_black_text"
+                        android:hint="Arena Address"
+                        android:singleLine="true"
+                        android:visibility="gone" />
+
+                    <fragment
+                        android:id="@+id/place_autocomplete_fragment"
+                        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/iv_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.0"
+                        android:background="@mipmap/ic_search" />
+
+                </LinearLayout>
+-->
+
+
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.mxi.goalkeeper.font.MyEditText
+                    android:id="@+id/et_apartment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/apartment"
+                    android:inputType="textCapWords|text"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/Color_black_text"
+                    android:textColorHint="@color/Color_black_text" />
+
+                <com.mxi.goalkeeper.font.MyEditText
+                    android:id="@+id/et_street"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/street"
+                    android:inputType="textCapWords"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/Color_black_text"
+                    android:textColorHint="@color/Color_black_text" />
+            </LinearLayout>
+-->
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.mxi.goalkeeper.font.MyTextView
+                    android:id="@+id/et_province"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:drawableRight="@android:drawable/arrow_down_float"
+                    android:drawableTint="@color/Color_black_text"
+                    android:gravity="bottom"
+                    android:paddingLeft="6dp"
+                    android:text="@string/province"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/Color_black_text" />
+
+                &lt;!&ndash;<com.mxi.goalkeeper.font.MyEditText
+                    android:id="@+id/et_province"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/province"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/Color_black_text"
+                    android:textColorHint="@color/Color_black_text"
+                    android:inputType="textCapWords" />
+&ndash;&gt;
+                <com.mxi.goalkeeper.font.MyEditText
+                    android:id="@+id/et_postal_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:hint="@string/postal_code"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/Color_black_text"
+                    android:textColorHint="@color/Color_black_text" />
+            </LinearLayout>
+-->
+
+            <com.mxi.goalkeeper.font.MyEditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="6dp"
+                android:textColor="@color/Color_black_text"
+                android:textColorHint="@color/Color_black_text" />
+
+            <com.mxi.goalkeeper.font.MyEditText
+                android:id="@+id/et_confirm_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="@string/confirm_again"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="6dp"
+                android:textColor="@color/Color_black_text"
+                android:textColorHint="@color/Color_black_text" />
+
+            <com.mxi.goalkeeper.font.MyEditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="@string/password_"
+                android:inputType="textPassword"
+                android:paddingLeft="6dp"
+                android:textColor="@color/Color_black_text"
+                android:textColorHint="@color/Color_black_text" />
+
+            <com.mxi.goalkeeper.font.MyEditText
+                android:id="@+id/et_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword"
+                android:paddingLeft="6dp"
+                android:textColor="@color/Color_black_text"
+                android:textColorHint="@color/Color_black_text" />
+
+
+            <com.mxi.goalkeeper.font.MyEditText
+                android:id="@+id/et_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="@string/phone_number"
+                android:inputType="number"
+                android:maxLength="12"
+                android:paddingLeft="6dp"
+                android:textColor="@color/Color_black_text"
+                android:textColorHint="@color/Color_black_text" />
+            <com.mxi.goalkeeper.font.MyTextView
+                android:padding="15dp"
+                android:background="@drawable/background_border"
+                android:gravity="left|center"
+                android:id="@+id/tv_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/address"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/Color_black_text"
+                android:textColorHint="@color/Color_black_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.mxi.goalkeeper.font.MyTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:text="@string/dob"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/Color_black_text" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.mxi.goalkeeper.font.MyTextView
+                        android:id="@+id/tv_year"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="@string/year"
+                        android:inputType="textEmailAddress"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/Color_black_text"
+                        android:textColorHint="@color/Color_black_text" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:background="@color/color_gray_text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.mxi.goalkeeper.font.MyTextView
+                        android:id="@+id/tv_month"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="@string/month"
+                        android:inputType="textEmailAddress"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/Color_black_text"
+                        android:textColorHint="@color/Color_black_text" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:background="@color/color_gray_text" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.mxi.goalkeeper.font.MyTextView
+                        android:id="@+id/tv_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="@string/day"
+                        android:inputType="textEmailAddress"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/Color_black_text"
+                        android:textColorHint="@color/Color_black_text" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:background="@color/color_gray_text" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <com.mxi.goalkeeper.font.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:gravity="center|left"
+                    android:text="Gender"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/Color_black_text" />
+
+                <RadioGroup
+                    android:id="@+id/radio_choose_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/male"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <RadioButton
+                        android:id="@+id/radio_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/female"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <com.mxi.goalkeeper.font.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:ems="10"
+                    android:gravity="center|left"
+                    android:paddingLeft="6dp"
+                    android:text="@string/you_are"
+                    android:textColor="@color/Color_black_text" />
+
+                <RadioGroup
+                    android:id="@+id/radio_choose_player"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_player"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/player" />
+
+                    <RadioButton
+                        android:id="@+id/radio_team_manager"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/team_manager" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_team_manager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_goalie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="@string/goalie" />
+
+                    <com.mxi.goalkeeper.font.MyTextView
+                        android:id="@+id/tv_rating_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:drawableRight="@mipmap/ic_info"
+                        android:ems="10"
+                        android:gravity="center|left"
+                        android:text="@string/self_rating"
+                        android:textColor="@color/Color_black_text" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:visibility="gone"
+                    android:id="@+id/radio_goalie_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A" />
+
+                    <RadioButton
+                        android:id="@+id/radioB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B" />
+
+                    <RadioButton
+                        android:id="@+id/radioC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C" />
+
+                    <RadioButton
+                        android:id="@+id/radioD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="D" />
+
+                    <RadioButton
+                        android:id="@+id/radioE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="E" />
+                </RadioGroup>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_defence"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/defense" />
+
+                    <com.mxi.goalkeeper.font.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:text="@string/self_rating"
+                        android:textColor="@color/Color_black_text" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:visibility="gone"
+                    android:id="@+id/radio_defence_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_defenceA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A" />
+
+                    <RadioButton
+                        android:id="@+id/radio_defenceB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B" />
+
+                    <RadioButton
+                        android:id="@+id/radio_defenceC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C" />
+
+                    <RadioButton
+                        android:id="@+id/radio_defenceD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="D" />
+
+                    <RadioButton
+                        android:id="@+id/radio_defenceE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="E" />
+                </RadioGroup>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_forward"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/forward" />
+
+                    <com.mxi.goalkeeper.font.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:text="@string/self_rating"
+                        android:textColor="@color/Color_black_text" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:visibility="gone"
+
+                    android:id="@+id/radio_forward_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_forwardA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A" />
+
+                    <RadioButton
+                        android:id="@+id/radio_forwardB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B" />
+
+                    <RadioButton
+                        android:id="@+id/radio_forwardC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C" />
+
+                    <RadioButton
+                        android:id="@+id/radio_forwardD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="D" />
+
+                    <RadioButton
+                        android:id="@+id/radio_forwardE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="E" />
+                </RadioGroup>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_referee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/referee" />
+
+                    <com.mxi.goalkeeper.font.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:text="@string/self_rating"
+                        android:textColor="@color/Color_black_text" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:visibility="gone"
+                    android:id="@+id/radio_referee_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_refereeA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A" />
+
+                    <RadioButton
+                        android:id="@+id/radio_refereeB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B" />
+
+                    <RadioButton
+                        android:id="@+id/radio_refereeC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C" />
+
+                    <RadioButton
+                        android:id="@+id/radio_refereeD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="D" />
+
+                    <RadioButton
+                        android:id="@+id/radio_refereeE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="E" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <com.mxi.goalkeeper.font.MyButton
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/sign_in"
+                android:text="@string/next"
+                android:textColor="@color/color_white" />
+
+            <com.mxi.goalkeeper.font.MyTextView
+                android:id="@+id/tv_sign_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/Color_black_text" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+

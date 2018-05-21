@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:background="@color/color_white"
+    android:elevation="6dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_plan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="6dp"
+        android:orientation="vertical">
+
+        <com.mxi.goalkeeper.font.MyTextView
+            android:id="@+id/tv_plan_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <com.mxi.goalkeeper.font.MyTextView
+            android:id="@+id/tv_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:text="New Text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <com.mxi.goalkeeper.font.MyTextView
+            android:id="@+id/tv_credits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:text="New Text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+</LinearLayout>

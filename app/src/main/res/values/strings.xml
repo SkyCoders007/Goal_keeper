@@ -1,0 +1,229 @@
+<resources>
+    <string name="app_name">Goalkeeper</string>
+
+    <!--Error-->
+    <string name="ws_error">Oops! something went wrong</string>
+    <string name="no_internet">Oops! No internet connection</string>
+    <string name="invalidate_param">Invalidate parameters</string>
+
+    <string name="action_notification">Notification</string>
+    <!--Login-->
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="otp">OTP</string>
+    <string name="new_password">New password</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="account">Don&#44;t have an account&#63;</string>
+    <string name="enter_email">Please enter valid email</string>
+    <string name="enter_password">Please enter password</string>
+    <string name="password_length">Password should be at least 6 characters long</string>
+    <string name="forgot_pass">Forgot password&#63;</string>
+
+    <!--Sign Up Next-->
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="civic_number">Civic Number</string>
+    <string name="apartment">Apartment</string>
+    <string name="street">Street</string>
+    <string name="city">City</string>
+    <string name="country">Country</string>
+    <string name="province">Province&#47;State</string>
+    <string name="postal_code">Postal Code</string>
+    <string name="confirm_again">Confirm Again</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password_">Password</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="you_are">You are a &#58;</string>
+    <string name="player">Player</string>
+    <string name="team_manager">Team Manager</string>
+    <string name="goalie">Goalie</string>
+    <string name="self_rating">Self Rating &#58;</string>
+    <string name="defence">Defence</string>//defense
+    <string name="defense">Defense</string>//defense
+    <string name="forward">Forward</string>
+    <string name="referee">Referee</string>
+    <string name="next">Next</string>
+    <string name="already_account">Already an account&#63;</string>
+    <string name="availability">Availabilities</string>
+    <string name="enter_first_name">Please enter first name</string>
+    <string name="numeral_first_name">First name should not allow numerals</string>
+    <string name="numeral_last_name">Last name should not allow numerals</string>
+    <string name="enter_last_name">Please enter last name</string>
+    <string name="enter_civic_no">Please enter civic number</string>
+    <string name="enter_apartment">Please enter apartment name</string>
+    <string name="enter_address">Please enter address</string>
+    <string name="enter_street">Please enter street name</string>
+    <string name="enter_city">Please enter city name</string>
+    <string name="enter_country">Please enter country name</string>
+    <string name="enter_province_state">Please enter province&#47;state name</string>
+    <string name="enter_postal_code">Please enter postal code</string>
+    <string name="enter_confirm_email">Please enter Confirm Again email</string>
+    <string name="enter_match_email">Email and confirm email must be same</string>
+    <string name="confirm_pass">Please enter confirm password</string>
+    <string name="enter_confirm_pass">Password and confirm password must be same</string>
+    <string name="enter_phone_number">Please enter phone number</string>
+
+    <string name="select_player_role">Please select your role</string>
+    <string name="select_player_self_rating">Please give rate your self for that role</string>
+
+    <string name="select_you_are">Please select you are a</string>
+    <string name="select_goalie">Please select goalie&#47;Self Rating</string>
+    <string name="select_defence">Please select defence&#47;Self Rating</string>
+    <string name="select_forward">Please select forward&#47;Self Rating</string>
+    <string name="select_referee">Please select referee&#47;Self Rating</string>
+    <string name="select_image">Please select profile image</string>
+    <string name="select_gender">Please select gender</string>
+    <string name="select_dob">Please select date of birth</string>
+    <string name="select_game_type">Please select game type</string>
+    <string name="select_calibre">Please select calibre</string>
+    <string name="select_mix_gender">Please select play category</string>
+    <string name="select_tavel_distance">Please select travel distance</string>
+
+    <string name="select_availability">Please select availability</string>
+    <string name="mobile_validation">Mobile number should be equal to 11 digits not more not less</string>
+
+    <string name="select_time_interval">Please select time interval</string>
+    <string name="no_interval">No availability selected for that day</string>
+
+    <!--Rating Definitions-->
+    <string name="rating_def">Rating Definitions</string>
+    <string name="forgot_password">Forgot Password</string>
+    <!-- <string name="rating_def_a">Pro &#44; Semi&#45;Pro or Minor Pro&#44; NCAA Division I &#44; Major
+    Junior&#59; Women&#39;s AAA&#44;</string>
+    <string name="rating_def_b">University or Senior Hockey&#44; Junior A&#44; Qu&#233;bec Junior AAA&#59;
+    Women&#39;s A&#44; BB or BAA</string>
+    <string name="rating_def_c">Canadian College&#44; Junior B or C&#44; Qu&#233;bec Junior AA or A&#59;
+    High School&#59; Women&#39;s C</string>-->
+    <string name="rating_def_d">House League</string>
+    <!--<string name="rating_def_e">No Experience&#44; started playing hockey as an Adult</string>-->
+
+    <!--Sign Up-->
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="dob">DOB &#58;</string>
+    <string name="year">Year</string>
+    <string name="month">Month</string>
+    <string name="day">Day</string>
+    <string name="game_type">Game type &#58;</string>
+    <string name="ground_type">Team size &#58;</string>
+    <string name="error_game_type">Please select game type</string>
+    <string name="error_ground_type">Please select team size</string>
+    <string name="on_ice">ice-hockey</string>
+    <string name="off_ice">Ball hockey</string>
+    <string name="three">3X3</string>
+    <string name="team_four">4X4</string>
+    <string name="five">5X5</string>
+    <string name="calibre">Caliber you would play &#58;</string>
+    <string name="mex_gender_play">Would you play mixed-gender&#63; &#58;</string>
+    <string name="travel_distance">Travel distance range &#58;</string>
+    <string name="submit">SUBMIT</string>
+    <string name="invitation_code_text">Enter invitation code</string>
+
+    <string-array name="nav_drawer_items">
+        <item name="about">Home</item>
+        <item name="about">Manage Event</item>
+        <item name="about">Manage Group</item>
+        <item name="about">About</item>
+        <item name="howitworks">How it work</item>
+        <item name="hepl">Help &#38; FAQ</item>
+        <item name="company">Company</item>
+        <item name="privacy">Privacy policy</item>
+
+    </string-array>
+    <!--Home-->
+    <string name="game">Games</string>
+    <string name="my_games">My games</string>
+    <string name="post">Post</string>
+    <string name="by_credits">Buy credits</string>
+    <string name="more">More</string>
+    <string name="logout">Logout</string>
+    <string name="logout_txt">Are you sure you want to logout?</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--My Games-->
+    <string name="upcoming_game">Upcoming games</string>
+    <string name="post_game">Past games</string>
+    <string name="my_reviews">My reviews</string>
+    <string name="post_game_survey">Post game surveys</string>
+    <string name="available_game">Available Games</string>
+
+    <!--More-->
+    <string name="my_profile">My profile</string>
+    <string name="invite_friends">Invite friends</string>
+    <string name="settings">Settings</string>
+    <string name="help">Help</string>
+
+    <!--Post Game Survey-->
+    <string name="post_surveys">Postgame survey</string>
+    <string name="post_surveys_details">Kindly fill up the details and provide rating to player</string>
+    <string name="winner_profile">Was &#91;Winner profile name&#93;</string>
+    <string name="good_league">Too good for the league</string>
+    <string name="right_on">Right on</string>
+    <string name="weak_league">Too weak for the league</string>
+    <string name="ice_time">On time</string>
+    <string name="late_ice">Late</string>
+    <string name="show_up">Didnt show up</string>
+    <string name="team_name">Team Name</string>
+
+    <!--Upcoming Games-->
+    <string name="post_request">Post a request</string>
+    <string name="date">Date</string>
+    <string name="start_time">Start Time</string>
+    <string name="duration">Duration</string>
+    <string name="ice_hockey">Ice hockey</string>
+    <string name="ball_hockey">Ball hockey</string>
+    <string name="four">4X4</string>
+    <string name="mix_gender">Mixed</string>
+    <string name="player_type">Player type &#58;</string>
+    <string name="player_expected">Level of player expected &#58;</string>
+    <string name="name">Name of arena</string>
+    <string name="title_activity_upcomminmg_games">Map</string>
+    <string name="select_upcoming_calibre">Caliber of game</string>
+
+    <!--Post Request-->
+    <string name="arena_address">Arena Address</string>
+    <string name="enter_teamname">Please enter team name</string>
+    <string name="select_date">Please select date</string>
+    <string name="select_time">Please select start time</string>
+    <string name="select_duration">Please select duration</string>
+    <string name="select_game">Please select game type</string>
+    <string name="select_ground_size">Please select ground size</string>
+    <string name="select_player">Please select player type</string>
+    <string name="select_player_level">Please select level of player</string>
+    <string name="select_select_arena">Please select name of arena</string>
+    <string name="request_charge_text">Request price list info</string>
+
+    <!--My Games-->
+    <string name="change_password">Change Password</string>
+    <string name="Setting">Setting</string>
+
+
+    <!--Google map-->
+
+    <string name="pause">Pause location updates</string>
+    <string name="resume">Resume location updates</string>
+
+    <string name="longitude">Longitude</string>
+    <string name="latitude">Latitude</string>
+    <string name="address">Address</string>
+    <string name="use_address">Use Address</string>
+    <string name="use_location">Use Latitude/Longitude</string>
+    <string name="get_address">Get Address</string>
+    <string name="fetch">Fetch</string>
+
+    <!--Stripe-->
+    <string name="acc_label_card_number">"card number"</string>
+    <string name="acc_label_expiry_date">"expiration date"</string>
+    <string name="expiry_date_hint">MM/YY</string>
+    <string name="progressMessage">Please waite&#8230;</string>
+    <string name="validationErrors">Validation Errors</string>
+    <string name="ok">OK</string>
+    <string name="verify">Verify</string>
+
+    <!--Buy Credits-->
+    <string name="select_plan">Select Plan</string>
+</resources>

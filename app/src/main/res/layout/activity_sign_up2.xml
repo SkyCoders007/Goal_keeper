@@ -1,0 +1,1647 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_background"
+    tools:context=".activity.SignUpNext">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:tint="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:src="@mipmap/ic_back" />
+        <ImageView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:src="@mipmap/logo" />
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+            <!-- <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:layout_marginBottom="5dp"
+                 android:orientation="horizontal">
+
+                 <com.mxi.goalkeeper.font.MyTextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                     android:layout_weight="2"
+                     android:ems="10"
+                     android:gravity="center|left"
+                     android:text="@string/you_are"
+                     android:textAppearance="?android:attr/textAppearanceMedium"
+                     android:textColor="@color/Color_black_text" />
+
+                 <RadioGroup
+                     android:id="@+id/radio_choose_gender"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                     android:layout_weight="1"
+                     android:gravity="center|left"
+                     android:orientation="horizontal">
+
+                     <RadioButton
+                         android:id="@+id/radio_player"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="@string/male"
+                         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                     <RadioButton
+                         android:id="@+id/radio_team_manager"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="@string/female"
+                         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                 </RadioGroup>
+
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:layout_marginBottom="4dp"
+                 android:layout_marginTop="4dp"
+                 android:layout_weight="1"
+                 android:orientation="horizontal">
+
+                 <com.mxi.goalkeeper.font.MyTextView
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                     android:layout_weight="1"
+                     android:ems="10"
+                     android:text="@string/dob"
+                     android:textAppearance="?android:attr/textAppearanceMedium"
+                     android:textColor="@color/Color_black_text" />
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                     android:layout_marginRight="3dp"
+                     android:layout_weight="1"
+                     android:orientation="vertical">
+
+                     <com.mxi.goalkeeper.font.MyTextView
+                         android:id="@+id/tv_year"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         android:ems="10"
+                         android:gravity="center"
+                         android:hint="@string/year"
+                         android:inputType="textEmailAddress"
+                         android:textAppearance="?android:attr/textAppearanceMedium"
+                         android:textColor="@color/Color_black_text"
+                         android:textColorHint="@color/Color_black_text" />
+
+                     <View
+                         android:layout_width="wrap_content"
+                         android:layout_height="1dp"
+                         android:background="@color/color_gray_text" />
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                     android:layout_marginLeft="3dp"
+                     android:layout_marginRight="3dp"
+                     android:layout_weight="1"
+                     android:orientation="vertical">
+
+                     <com.mxi.goalkeeper.font.MyTextView
+                         android:id="@+id/tv_month"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         android:ems="10"
+                         android:gravity="center"
+                         android:hint="@string/month"
+                         android:inputType="textEmailAddress"
+                         android:textAppearance="?android:attr/textAppearanceMedium"
+                         android:textColor="@color/Color_black_text"
+                         android:textColorHint="@color/Color_black_text" />
+
+                     <View
+                         android:layout_width="wrap_content"
+                         android:layout_height="1dp"
+                         android:background="@color/color_gray_text" />
+
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                     android:layout_marginLeft="3dp"
+                     android:layout_marginRight="3dp"
+                     android:layout_weight="1"
+                     android:orientation="vertical">
+
+                     <com.mxi.goalkeeper.font.MyTextView
+                         android:id="@+id/tv_day"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         android:ems="10"
+                         android:gravity="center"
+                         android:hint="@string/day"
+                         android:inputType="textEmailAddress"
+                         android:textAppearance="?android:attr/textAppearanceMedium"
+                         android:textColor="@color/Color_black_text"
+                         android:textColorHint="@color/Color_black_text" />
+
+                     <View
+                         android:layout_width="wrap_content"
+                         android:layout_height="1dp"
+                         android:background="@color/color_gray_text" />
+
+                 </LinearLayout>
+             </LinearLayout>
+     -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <com.mxi.goalkeeper.font.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                        android:ems="10"
+                        android:text="@string/game_type"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/Color_black_text" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_on_ice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/ice_hockey"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_off_ice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/ball_hockey"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:gravity="center|left"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <com.mxi.goalkeeper.font.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.4"
+                        android:ems="10"
+                        android:text="@string/ground_type"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/Color_black_text" />
+
+
+                    <CheckBox
+                        android:id="@+id/checkbox_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.9"
+                        android:checked="false"
+                        android:text="@string/three"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.9"
+                        android:checked="false"
+                        android:text="@string/team_four"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.9"
+                        android:checked="false"
+                        android:text="@string/five"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <com.mxi.goalkeeper.font.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:text="@string/calibre"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/Color_black_text" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_A"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="A"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_B"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="B"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_C"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="C"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="4dp"
+                        android:orientation="horizontal">
+
+                        <com.mxi.goalkeeper.font.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:text="@string/calibre"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/Color_black_text"
+                            android:visibility="invisible" />
+
+
+                        <CheckBox
+                            android:id="@+id/checkbox_D"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:checked="false"
+                            android:text="D"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_E"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:checked="false"
+                            android:text="E"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:checked="false"
+                            android:text="E"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <com.mxi.goalkeeper.font.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:ems="10"
+                        android:gravity="center|left"
+                        android:text="@string/mex_gender_play"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/Color_black_text" />
+
+                    <RadioGroup
+                        android:id="@+id/radio_mix_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:gravity="center|left"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radio_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yes"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <RadioButton
+                            android:id="@+id/radio_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:orientation="vertical">
+
+                    <com.mxi.goalkeeper.font.MyTextView
+                        android:id="@+id/tv_travel_distance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center|left"
+                        android:text="@string/travel_distance"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/Color_black_text" />
+
+                    <SeekBar
+                        android:id="@+id/seekbar_distance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:orientation="horizontal">
+
+                        <com.mxi.goalkeeper.font.MyTextView
+                            android:id="@+id/tv_initial_diatance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:gravity="center|left"
+                            android:text="0 KM"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/Color_black_text" />
+
+                        <com.mxi.goalkeeper.font.MyTextView
+                            android:id="@+id/tv_last_distance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:gravity="center|right"
+                            android:text="100 KM"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/Color_black_text" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <com.mxi.goalkeeper.font.MyTextView
+                android:id="@+id/tv_availability"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:gravity="center|left"
+                android:text="@string/availability"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/Color_black_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:fillViewport="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/expandable_child"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/expandable_header"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/ll_monday"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_header_monday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:text="Monday"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/Color_black_text" />
+
+                            <ImageView
+                                android:id="@+id/iv_down_monday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@mipmap/ic_downarrow" />
+
+                            <ImageView
+                                android:id="@+id/iv_up_monday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@mipmap/ic_uparrow"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_monday_child"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/color_background"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <com.mxi.goalkeeper.font.MyTextView
+                                android:id="@+id/tv_initial_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:gravity="center|left"
+                                android:text="00:00"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/Color_black_text" />
+
+                            <com.mxi.goalkeeper.font.MyTextView
+                                android:id="@+id/tv_last_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:gravity="center|right"
+                                android:text="23:45"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/Color_black_text" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <!--  <SeekBar
+                                  android:id="@+id/seekbar"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_gravity="center"
+                                  android:layout_marginRight="5dp"
+                                  android:layout_weight="1" />-->
+
+                            <LinearLayout
+                                android:id="@+id/seekbar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:orientation="horizontal" />
+
+                            <ImageView
+                                android:id="@+id/iv_plus_monday"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center"
+                                android:background="@mipmap/ic_plus_red" />
+
+                        </LinearLayout>
+
+
+
+
+                        <com.mxi.goalkeeper.font.MyTextView
+                            android:id="@+id/tv_no_mon_intervals"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center|right"
+                            android:text="@string/no_interval"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/Color_black_text"
+                            android:visibility="gone" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/RecyclerView_monday"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="6dp"
+                            android:orientation="horizontal" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/expandable_child"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/expandable_header"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/ll_tuesday"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_header_tuesday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:text="Tuesday"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/Color_black_text" />
+
+                            <ImageView
+                                android:id="@+id/iv_down_tuesday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@mipmap/ic_downarrow" />
+
+                            <ImageView
+                                android:id="@+id/iv_up_tuesday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@mipmap/ic_uparrow"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_tuesday_child"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/color_background"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <com.mxi.goalkeeper.font.MyTextView
+                                android:id="@+id/tv_tues_initial_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:gravity="center|left"
+                                android:text="00:00"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/Color_black_text" />
+
+                            <com.mxi.goalkeeper.font.MyTextView
+                                android:id="@+id/tv_tuesd_last_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:gravity="center|right"
+                                android:text="23:45"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/Color_black_text" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <!--  <SeekBar
+                                  android:id="@+id/seekbar"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_gravity="center"
+                                  android:layout_marginRight="5dp"
+                                  android:layout_weight="1" />-->
+
+                            <LinearLayout
+                                android:id="@+id/seekbar_tuesday"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:orientation="horizontal" />
+
+                            <ImageView
+                                android:id="@+id/iv_plus_tuesday"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center"
+                                android:background="@mipmap/ic_plus_red" />
+
+                        </LinearLayout>
+
+                        <com.mxi.goalkeeper.font.MyTextView
+                            android:id="@+id/tv_no_tue_intervals"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center|right"
+                            android:text="@string/no_interval"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/Color_black_text"
+                            android:visibility="gone" />
+
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/RecyclerView_tuesday"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="6dp"
+                            android:orientation="horizontal" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/expandable_child"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/expandable_header"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/ll_wednesday"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_wednesday_header_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:text="Wednesday"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/Color_black_text" />
+
+                            <ImageView
+                                android:id="@+id/iv_down_wesday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@mipmap/ic_downarrow" />
+
+                            <ImageView
+                                android:id="@+id/iv_up_wesday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@mipmap/ic_uparrow"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_wednesday_child"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/color_background"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <com.mxi.goalkeeper.font.MyTextView
+                                android:id="@+id/tv_wednes_initial_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:gravity="center|left"
+                                android:text="00:00"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/Color_black_text" />
+
+                            <com.mxi.goalkeeper.font.MyTextView
+                                android:id="@+id/tv_wednes_last_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:gravity="center|right"
+                                android:text="23:45"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/Color_black_text" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <!--  <SeekBar
+                                  android:id="@+id/seekbar"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_gravity="center"
+                                  android:layout_marginRight="5dp"
+                                  android:layout_weight="1" />-->
+
+                            <LinearLayout
+                                android:id="@+id/seekbar_wednesday"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:orientation="horizontal" />
+
+                            <ImageView
+                                android:id="@+id/iv_plus_wednesday"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center"
+                                android:background="@mipmap/ic_plus_red" />
+
+                        </LinearLayout>
+
+
+
+                        <com.mxi.goalkeeper.font.MyTextView
+                            android:id="@+id/tv_no_wed_intervals"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center|right"
+                            android:text="@string/no_interval"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/Color_black_text"
+                            android:visibility="gone" />
+
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/RecyclerView_wednesday"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="6dp"
+                            android:orientation="horizontal" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/expandable_child"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/expandable_header"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/ll_thursday"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_header_thrusday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:text="Thursday"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/Color_black_text" />
+
+                            <ImageView
+                                android:id="@+id/iv_down_thursday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@mipmap/ic_downarrow" />
+
+                            <ImageView
+                                android:id="@+id/iv_up_thursday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@mipmap/ic_uparrow"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_thursday_child"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/color_background"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <com.mxi.goalkeeper.font.MyTextView
+                                android:id="@+id/tv_thr_initial_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:gravity="center|left"
+                                android:text="00:00"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/Color_black_text" />
+
+                            <com.mxi.goalkeeper.font.MyTextView
+                                android:id="@+id/tv_thr_last_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:gravity="center|right"
+                                android:text="23:45"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/Color_black_text" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <!--  <SeekBar
+                                  android:id="@+id/seekbar"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_gravity="center"
+                                  android:layout_marginRight="5dp"
+                                  android:layout_weight="1" />-->
+
+                            <LinearLayout
+                                android:id="@+id/seekbar_thursday"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:orientation="horizontal" />
+
+                            <ImageView
+                                android:id="@+id/iv_plus_thursday"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center"
+                                android:background="@mipmap/ic_plus_red" />
+
+                        </LinearLayout>
+
+
+                        <com.mxi.goalkeeper.font.MyTextView
+                            android:id="@+id/tv_no_thurs_intervals"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center|right"
+                            android:text="@string/no_interval"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/Color_black_text"
+                            android:visibility="gone" />
+
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/RecyclerView_thursday"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="6dp"
+                            android:orientation="horizontal" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/expandable_child"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/expandable_header"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/ll_friday"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_header_friday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:text="Friday"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/Color_black_text" />
+
+                            <ImageView
+                                android:id="@+id/iv_down_friday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@mipmap/ic_downarrow" />
+
+                            <ImageView
+                                android:id="@+id/iv_up_friday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@mipmap/ic_uparrow"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_friday_child"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/color_background"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <com.mxi.goalkeeper.font.MyTextView
+                                android:id="@+id/tv_fri_initial_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:gravity="center|left"
+                                android:text="00:00"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/Color_black_text" />
+
+                            <com.mxi.goalkeeper.font.MyTextView
+                                android:id="@+id/tv_fri_last_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:gravity="center|right"
+                                android:text="23:45"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/Color_black_text" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <!--  <SeekBar
+                                  android:id="@+id/seekbar"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_gravity="center"
+                                  android:layout_marginRight="5dp"
+                                  android:layout_weight="1" />-->
+
+                            <LinearLayout
+                                android:id="@+id/seekbar_friday"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:orientation="horizontal" />
+
+                            <ImageView
+                                android:id="@+id/iv_plus_friday"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center"
+                                android:background="@mipmap/ic_plus_red" />
+
+                        </LinearLayout>
+
+
+
+                        <com.mxi.goalkeeper.font.MyTextView
+                            android:id="@+id/tv_no_fri_intervals"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center|right"
+                            android:text="@string/no_interval"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/Color_black_text"
+                            android:visibility="gone" />
+
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/RecyclerView_friday"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="6dp"
+                            android:orientation="horizontal" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/expandable_child"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/expandable_header"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/ll_saturday"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_sat_header_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:text="Saturday"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/Color_black_text" />
+
+                            <ImageView
+                                android:id="@+id/iv_down_saturday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@mipmap/ic_downarrow" />
+
+                            <ImageView
+                                android:id="@+id/iv_up_saturday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@mipmap/ic_uparrow"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_saturday_child"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/color_background"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <com.mxi.goalkeeper.font.MyTextView
+                                android:id="@+id/tv_sat_initial_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:gravity="center|left"
+                                android:text="00:00"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/Color_black_text" />
+
+                            <com.mxi.goalkeeper.font.MyTextView
+                                android:id="@+id/tv_sat_last_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:gravity="center|right"
+                                android:text="23:45"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/Color_black_text" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <!--  <SeekBar
+                                  android:id="@+id/seekbar"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_gravity="center"
+                                  android:layout_marginRight="5dp"
+                                  android:layout_weight="1" />-->
+
+                            <LinearLayout
+                                android:id="@+id/seekbar_saturday"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:orientation="horizontal" />
+
+                            <ImageView
+                                android:id="@+id/iv_plus_saturday"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center"
+                                android:background="@mipmap/ic_plus_red" />
+
+                        </LinearLayout>
+
+
+
+                        <com.mxi.goalkeeper.font.MyTextView
+                            android:id="@+id/tv_no_sat_intervals"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center|right"
+                            android:text="@string/no_interval"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/Color_black_text"
+                            android:visibility="gone" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/RecyclerView_saturday"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="6dp"
+                            android:orientation="horizontal" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/expandable_child"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/expandable_header"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/ll_sunday"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_sunday_header_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:text="Sunday"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/Color_black_text" />
+
+                            <ImageView
+                                android:id="@+id/iv_down_sunday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@mipmap/ic_downarrow" />
+
+                            <ImageView
+                                android:id="@+id/iv_up_sunday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@mipmap/ic_uparrow"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_sunday_child"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/color_background"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <com.mxi.goalkeeper.font.MyTextView
+                                android:id="@+id/tv_sun_initial_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:gravity="center|left"
+                                android:text="00:00"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/Color_black_text" />
+
+                            <com.mxi.goalkeeper.font.MyTextView
+                                android:id="@+id/tv_sun_last_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:gravity="center|right"
+                                android:text="23:45"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/Color_black_text" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <!--  <SeekBar
+                                  android:id="@+id/seekbar"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_gravity="center"
+                                  android:layout_marginRight="5dp"
+                                  android:layout_weight="1" />-->
+
+                            <LinearLayout
+                                android:id="@+id/seekbar_sunday"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:orientation="horizontal" />
+
+                            <ImageView
+                                android:id="@+id/iv_plus_sunday"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center"
+                                android:background="@mipmap/ic_plus_red" />
+
+                        </LinearLayout>
+
+
+
+                        <com.mxi.goalkeeper.font.MyTextView
+                            android:id="@+id/tv_no_sun_intervals"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center|right"
+                            android:text="@string/no_interval"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/Color_black_text"
+                            android:visibility="gone" />
+
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/RecyclerView_sunday"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="6dp"
+                            android:orientation="horizontal" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--  <ExpandableListView
+                      android:id="@+id/expandableListView"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_gravity="start"
+                      android:background="@null"
+                      android:divider="@null"
+                      android:groupIndicator="@null" />-->
+
+                <!--
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/coupan_code_back"
+                                android:orientation="horizontal">
+
+                                <com.mxi.goalkeeper.font.MyEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/invitation_code_text" />
+                            </LinearLayout>
+                -->
+
+                <com.mxi.goalkeeper.font.MyButton
+                    android:id="@+id/btn_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/sign_in"
+                    android:text="@string/submit"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_white" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

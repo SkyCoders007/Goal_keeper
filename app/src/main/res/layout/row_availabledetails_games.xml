@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:padding="10sp"
+    android:background="@color/color_white"
+    android:elevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.mxi.goalkeeper.font.MyTextView
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:padding="4dp"
+                android:text="Sonali Bharati"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorPrimary" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:gravity="right|bottom"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+            <com.mxi.goalkeeper.font.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:text="Amount :"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/Color_black_text" />
+
+                <com.mxi.goalkeeper.font.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:text="$"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/Color_black_text" />
+
+                <com.mxi.goalkeeper.font.MyTextView
+                    android:id="@+id/tv_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/Color_black_text" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="4dp">
+
+            <com.mxi.goalkeeper.font.MyTextView
+                android:id="@+id/tv_self_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Ratting :"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/Color_black_text" />
+
+            <com.mxi.goalkeeper.font.MyTextView
+                android:layout_weight="1"
+                android:id="@+id/tv_playing_for"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:text="Playing Type : Free"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/Color_black_text" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

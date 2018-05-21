@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="error_text_dark_theme">#ffe85746</color>
+    <color name="error_text_light_theme">#ffeb1c26</color>
+    <declare-styleable name="CardInputView"><attr format="string" name="cardHintText"/><attr format="color" name="cardTint"/><attr format="color" name="cardTextErrorColor"/></declare-styleable>
+    <dimen name="card_cvc_initial_margin">1000dp</dimen>
+    <dimen name="card_expiry_initial_margin">200dp</dimen>
+    <dimen name="card_icon_padding">12dp</dimen>
+    <dimen name="card_widget_min_width">320dp</dimen>
+    <string name="acc_label_card_number">"card number"</string>
+    <string name="acc_label_expiry_date">"expiration date"</string>
+    <string name="card_number_hint">4242 4242 4242 4242</string>
+    <string name="cvc_amex_hint">CVV</string>
+    <string name="cvc_number_hint">CVC</string>
+    <string name="expiry_date_hint">MM/YY</string>
+</resources>

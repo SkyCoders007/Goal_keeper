@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <FrameLayout
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!--<android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />-->
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorAccent"
+        android:elevation="10dp"
+        android:orientation="horizontal">
+
+        <com.mxi.goalkeeper.font.MyButton
+            android:id="@+id/btn_games"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="@string/game"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/color_white" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.mxi.goalkeeper.font.MyButton
+                    android:id="@+id/btn_my_games"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="@string/my_games"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/color_white" />
+            </LinearLayout>
+
+            <!--  <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center|top|right"
+                  android:background="@mipmap/ic_notification"
+                  android:layout_marginTop="5dp" />-->
+
+            <com.mxi.goalkeeper.font.MyTextView
+                android:id="@+id/tvCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top|right"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="6dp"
+                android:background="@mipmap/ic_noti_white"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="3dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#FFFFFF"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <com.mxi.goalkeeper.font.MyButton
+            android:id="@+id/btn_post"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="@string/post"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/color_white" />
+
+        <com.mxi.goalkeeper.font.MyButton
+            android:id="@+id/btn_credits"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="@string/by_credits"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/color_white" />
+
+        <com.mxi.goalkeeper.font.MyButton
+            android:id="@+id/btn_more"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="@string/more"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/color_white" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

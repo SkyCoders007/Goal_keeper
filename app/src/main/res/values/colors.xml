@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#DA3C3A</color>
+    <color name="colorPrimaryDark">#DA3C3A</color>
+    <color name="colorAccent">#DA3C3A</color>
+    <color name="color_red">#DA1C1C</color>
+    <color name="color_background">#E8ECF3</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_gray_text">#bdbdbd</color>
+    <color name="color_gray">#D0D3D8</color>
+    <color name="Color_black_text">#000000</color>
+    <!--<color name="Color_black_text">#191a1a</color>-->
+    <color name="color_facebook">#3B5998</color>
+    <color name="color_rating_bg">#0DE8ECF3</color>
+    <color name="color_rating_bg_1">#403e1919</color>
+    <color name="color_green">#21ab4e</color>
+
+    <color name="gradientEnd">#081b2c</color>
+
+    <color name="error_text_light_theme">#ffeb1c26</color>
+    <color name="error_text_dark_theme">#ffe85746</color>
+    <color name="underline">#5458DF</color>
+</resources>
